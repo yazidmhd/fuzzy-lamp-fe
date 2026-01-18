@@ -37,7 +37,7 @@ for ((i=1; i<=$1; i++)); do
   3. Update the PRD with what was done. \
   4. Append your progress to progress.txt. \
   ONLY WORK ON A SINGLE TASK. \
-  If the PRD is complete, output <promise>COMPLETE</promise>." 2>&1 | \
+  If, while implementing the feature, you notice that all work is complete, output <promise>COMPLETE</promise>." 2>&1 | \
   while IFS= read -r line; do
     # Parse streaming JSON and show relevant updates
     if echo "$line" | jq -e '.type == "assistant"' > /dev/null 2>&1; then
