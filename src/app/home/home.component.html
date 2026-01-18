@@ -1,6 +1,6 @@
 <div class="home-container">
   <!-- Login Screen -->
-  <div class="home-card" *ngIf="!isLoggedIn">
+  <div class="home-card">
     <h1>Welcome</h1>
     <p class="subtitle">Enter your User ID to login</p>
 
@@ -24,15 +24,5 @@
       [disabled]="!userId.trim()"
       class="p-button continue-button">
     </button>
-  </div>
-
-  <!-- Home Page with Form Card -->
-  <div class="home-page" *ngIf="isLoggedIn">
-    <h1 class="home-title">Home</h1>
-    <div class="cards-container">
-      <div class="form-card" (click)="onFormCardClick()">
-        <span class="card-title">Form</span>
-      </div>
-    </div>
   </div>
 </div>

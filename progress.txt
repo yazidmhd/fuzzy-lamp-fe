@@ -12,3 +12,25 @@ The new Department dropdown:
 - Loads options on focus (lazy-loaded)
 - Maintains consistent styling with Status dropdown
 - Selection is captured via ngModel binding
+
+Feature 6: Add a new Landing page - COMPLETED
+
+Changes made:
+1. Created new LandingComponent in src/app/landing/ directory:
+   - landing.component.ts - Component logic with userId handling and navigation to Form page
+   - landing.component.html - Template with "Landing" title and square "Form" card
+   - landing.component.css - Styling consistent with existing design system
+2. Added 'landing' route to app-routing.module.ts (line 9)
+3. Registered LandingComponent in app.module.ts declarations (line 26)
+4. Modified HomeComponent to redirect to /landing after login instead of staying on page:
+   - Removed isLoggedIn and loggedInUser properties
+   - Updated onLogin() to navigate to /landing with userId query param
+   - Removed onFormCardClick() method (moved to LandingComponent)
+5. Simplified home.component.html to show only the login screen
+
+The new Landing page:
+- Displays "Landing" as the page title
+- Shows a single square card with "Form" title (150x150px)
+- Clicking the Form card navigates to /form with userId as query param
+- Redirects to home if accessed without userId
+- Maintains consistent styling with existing design system

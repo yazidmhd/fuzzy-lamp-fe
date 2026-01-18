@@ -8,19 +8,12 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   userId: string = '';
-  isLoggedIn: boolean = false;
-  loggedInUser: string = '';
 
   constructor(private router: Router) {}
 
   onLogin(): void {
     if (this.userId.trim()) {
-      this.loggedInUser = this.userId.trim();
-      this.isLoggedIn = true;
+      this.router.navigate(['/landing'], { queryParams: { userId: this.userId.trim() } });
     }
-  }
-
-  onFormCardClick(): void {
-    this.router.navigate(['/form'], { queryParams: { userId: this.loggedInUser } });
   }
 }

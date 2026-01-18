@@ -51,12 +51,36 @@
       "category": "ui",
       "description": "Add a new Gender dropdown component in the form page",
       "steps": [
-        "Navigate to the form page",
-        "Verify a new Gender dropdown component is rendered directly below the Type dropdown",
-        "Verify the new dropdown has a label and placeholder text",
-        "Click the new dropdown and verify options are displayed",
-        "Select an option and verify the selection is captured",
-        "Verify the new dropdown maintains consistent styling with the Status dropdown"
+        {
+          "action": "Navigate to the form page",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Verify a new Gender dropdown component is rendered directly below the Type dropdown",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Verify the new dropdown has a label and placeholder text",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Click the new dropdown and verify options are displayed",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Select an option and verify the selection is captured",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Verify the new dropdown maintains consistent styling with the Status dropdown",
+          "reference": "",
+          "notes": []
+        }
       ],
       "passes": true
     },
@@ -64,13 +88,33 @@
       "category": "ui",
       "description": "Add a new Landing page",
       "steps": [
-        "Navigate to the Home page and login with newuser user",
-        "Verify after login that you are at Landing page",
-        "Verify that you are able to see a single square card component with title Form in it",
-        "Click on Form card",
-        "Verify you are now in the Form page after the click"
+        {
+          "action": "Navigate to the Home page and login with newuser user",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Verify after login that you are at Landing page",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Verify that you are able to see a single square card component with title Form in it",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Click on Form card",
+          "reference": "",
+          "notes": []
+        },
+        {
+          "action": "Verify you are now in the Form page after the click",
+          "reference": "",
+          "notes": []
+        }
       ],
-      "passes": false
+      "passes": true
     }
   ]
 }
