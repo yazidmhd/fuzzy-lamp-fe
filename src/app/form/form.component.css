@@ -1,0 +1,274 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  margin-top: 5px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.user-info {
+  color: #007bff;
+  font-size: 14px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  color: #666;
+}
+
+.loading-spinner-large {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-spinner {
+  color: #007bff;
+  font-size: 18px;
+}
+
+.button-spinner {
+  margin-left: 10px;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.reset-button {
+  margin-left: auto;
+}
+
+.hint {
+  color: #888;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+}
+
+.loading-hint {
+  color: #007bff;
+  display: block;
+  margin-top: 5px;
+}
+
+.table-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-archived {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+/* Radio button styles */
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-label {
+  cursor: pointer;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.loading-text {
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selected-values {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+}
+
+.selected-values h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.selected-values p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 40px 0;
+}
+
+.field-divider {
+  border: none;
+  border-top: 1px dashed #ddd;
+  margin: 25px 0;
+}
+
+.query-params {
+  background-color: #f0f7ff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.query-params strong {
+  color: #333;
+  margin-right: 5px;
+}
+
+.query-params .param {
+  background-color: #e3f2fd;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #1565c0;
+}
+
+/* Error Modal styles */
+.error-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 48px;
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  word-break: break-word;
+}
+
+.error-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+::ng-deep .p-dialog .p-dialog-header {
+  background-color: #dc3545;
+  color: white;
+}
+
+::ng-deep .p-dialog .p-dialog-content {
+  padding: 0;
+}

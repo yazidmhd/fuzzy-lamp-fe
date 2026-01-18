@@ -1,0 +1,14 @@
+Feature 3: Add a new dropdown component below the existing Status dropdown - COMPLETED
+
+Changes made:
+1. Added getDepartments() method to api.service.ts (line 60-62)
+2. Added Department dropdown HTML in form.component.html (lines 83-100) - placed directly below Status dropdown
+3. Added departmentOptions, selectedDepartment, departmentLoading properties to form.component.ts
+4. Added onDepartmentFocus() and onDepartmentChange() methods to form.component.ts
+
+The new Department dropdown:
+- Has a label "Department"
+- Has placeholder text "Select Department"
+- Loads options on focus (lazy-loaded)
+- Maintains consistent styling with Status dropdown
+- Selection is captured via ngModel binding
